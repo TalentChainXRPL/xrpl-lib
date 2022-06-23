@@ -7,7 +7,7 @@
 ## About TalentChain
 ### [TalentChain](https://www.talentchain.io) is providing a decentralized exchange that allow users to trade on XRP ledger.
 
-### `Decentralized Exchange` – Access [TalentChain DEX](https://www.talentchain.io/dex/TALENT).
+`Decentralized Exchange` – Access [TalentChain DEX](https://www.talentchain.io/dex/TALENT).
 
 <br/>
 
@@ -38,7 +38,7 @@
 
 <br/>
 
-### `TalentChain API` – We aim to launch a live instance of our XRPL TS library at this [link](https://api.talentchain.io) in near future.
+`TalentChain API` – We aim to launch a live instance of our XRPL TS library at this [link](https://api.talentchain.io) in near future.
 
 <br/><br/>
 
