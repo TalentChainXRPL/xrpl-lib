@@ -1,26 +1,40 @@
 # XRPL API By TalentChain
 
-<p><b>TalentChain</b> is an <i>open source</i> platform that provides a <i>Restful API</i> to access information from  <b><i>XRP ledger</i></b>.</p>
+### <b>TalentChain</b> aims to provide an <i>open source</i> Restful API, to make it easier to access information and interact with <b><i>XRP ledger</i></b>.
 
-### About Server
+<br/><br/>
 
-<p>Under hood server uses Node.js and the framework on top of it is Nestjs</p>
+## About TalentChain
+### [TalentChain](https://www.talentchain.io) offers a decentralized exchange that allow users to trade on XRP ledger.
 
-<p>TalentChain will be providing a live instance of this API in near future at the following URL:</p>
+### `Decentralized Exchange` – Access [TalentChain DEX](https://www.talentchain.io/dex/TALENT).
 
-`API_ENDPOINT` – talentchain xrpl API url (https://api.talentchain.io).
+<br/>
 
-### About API
+### It also provide opportunities for talented individuals all around the globe to tokenize their skills by providing access to personal tokens issued on XRP ledger.
 
-TalentChain API uses [https://www.npmjs.com/package/xrpl](xrpl JS/TS npm package) for sending requests to the XRP ledger.
+<br/><br/>
 
-<p>TalentChain API connects to mainnet of the XRP ledger through websockets using [wss://xrplcluster.com](<b><i>mainnet</i></b>)</p>
+## About API
 
-### API reference
+### Under the hood, TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) sending requests to XRP ledger and utilizes [Ripple Data API v2](https://data.ripple.com/v2/) getting information from XRP ledger.
+
+<br/>
+
+### TalentChain API connects to mainnet of the XRP ledger through websockets using [mainnet](wss://xrplcluster.com)
+
+<br/>
+
+### `TalentChain API` – Open source API [instance](https://api.talentchain.io)  will be available soon.
+
+<br/><br/>
+
+## API reference
+
+<br/>
 
 
-
-## Account Balances
+### Account Balances
 
 Get all balances of a specific XRP Ledger account.
 
@@ -55,7 +69,7 @@ Each balance object has the following fields:
 | `value` | String | Amount of currency that the user holds. |
 | `issuer` | String | Address of the account that owns that currency, not applicable to XRP (<i>native token of XRP ledger</i>) |
 
-## Account Balances for specific currency
+### Account Balances for specific currency
 
 Get balance of a specific XRP Ledger account for a specific currency.
 
@@ -93,7 +107,7 @@ Each balance object has the following fields:
 
 
 
-## Account Orders
+### Account Orders
 
 Get orders of a specific account, that have not already been filled in the order book.
 
@@ -136,7 +150,7 @@ Each offer object has the following fields:
 | `expiration` | Unsigned integer | (May be omitted) A time after which this offer is considered unfunded. |
 
 
-## Account Orders for specific currency
+### Account Orders for specific currency
 
 Get orders for a specific currency in the order book, of a particular address.
 
@@ -181,7 +195,7 @@ Each offer object has the following fields:
 | `expiration` | Unsigned integer | (May be omitted) A time after which this offer is considered unfunded. |
 
 
-## Account Orders for specific currency pair
+### Account Orders for specific currency pair
 
 Get orders for a specific currency pair in the order book, of a particular address.
 
