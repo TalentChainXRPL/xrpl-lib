@@ -1,31 +1,31 @@
 # XRPL API By TalentChain
 
-### <b>TalentChain</b> aims to provide an <i>open source</i> Restful API, to make it easier to access information and interact with <b><i>XRP ledger</i></b>.
+<h3> <b>TalentChain</b> aims to provide an <i>open source</i> Restful API, to make it easier to access information and interact with <b><i>XRP ledger</i></b>. </h3>
 
 <br/><br/>
 
 ## About TalentChain
-### [TalentChain](https://www.talentchain.io) offers a decentralized exchange that allow users to trade on XRP ledger.
+#### [TalentChain](https://www.talentchain.io) offers a decentralized exchange that allow users to trade on XRP ledger.
 
-### `Decentralized Exchange` – Access [TalentChain DEX](https://www.talentchain.io/dex/TALENT).
+`Decentralized Exchange` – Access [TalentChain DEX](https://www.talentchain.io/dex/TALENT).
 
 <br/>
 
-### It also provide opportunities for talented individuals all around the globe to tokenize their skills by providing access to personal tokens issued on XRP ledger.
+#### It also provide opportunities for talented individuals all around the globe to tokenize their skills by providing access to personal tokens issued on XRP ledger.
 
 <br/><br/>
 
 ## About API
 
-### Under the hood, TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) sending requests to XRP ledger and utilizes [Ripple Data API v2](https://data.ripple.com/v2/) getting information from XRP ledger.
+#### Under the hood, TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) sending requests to XRP ledger and utilizes [Ripple Data API v2](https://data.ripple.com/v2/) getting information from XRP ledger.
 
 <br/>
 
-### TalentChain API connects to mainnet of the XRP ledger through websockets using [mainnet](wss://xrplcluster.com)
+#### TalentChain API connects to mainnet of the XRP ledger through websockets using [mainnet](wss://xrplcluster.com)
 
 <br/>
 
-### `TalentChain API` – Open source API [instance](https://api.talentchain.io)  will be available soon.
+#### `TalentChain API` – Open source API [instance](https://api.talentchain.io)  will be available soon.
 
 <br/><br/>
 
