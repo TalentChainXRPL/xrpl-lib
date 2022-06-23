@@ -30,15 +30,15 @@
 
 <br/><br/>
 
-## About API
+## About TalentChain API
 
-#### Under the hood, TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) and connects to XRP ledger through websockets using [mainnet](wss://xrplcluster.com) for interacting with the ledger.
+ Under the hood, TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) and connects to XRP ledger through websockets using [mainnet](wss://xrplcluster.com) for interacting with the ledger.
 
-#### For receiving some information from ledger, the API also utilizes [Ripple Data API v2](https://data.ripple.com/v2/).
+ For receiving some information from ledger, the API also utilizes [Ripple Data API v2](https://data.ripple.com/v2/).
 
 <br/>
 
-#### We aim to provide `TalentChain API` live instance [here](https://api.talentchain.io) in near future.
+### `TalentChain API` – We aim to launch a live instance of our XRPL TS library at this [link](https://api.talentchain.io) in near future.
 
 <br/><br/>
 
