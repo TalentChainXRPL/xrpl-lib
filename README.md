@@ -1,4 +1,4 @@
-# XRPL TypeScript Library By TalentChain
+# A TypeScript Library for XRPL By TalentChain
 
 <h3> <b>TalentChain</b> aims to provide an <i>open source</i> Restful API, to make it easier to access information and interact with <b><i>XRP ledger</i></b>. </h3>
 
