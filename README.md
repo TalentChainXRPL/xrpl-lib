@@ -11,7 +11,7 @@
 
 <br/>
 
-#### [TalentChain](https://www.talentchain.io) offer opportunities to talented individuals interested in self-monetization of their skills around the globe by providing access to personal tokens issued on XRP ledger. These personal tokens will be avialable for trading on [TalentChain DEX](https://www.talentchain.io/dex/TALENT), this enable talents to trade thier time for the servcies / skills they offer in exchange for their own currency (personal token). [TalentChain](https://www.talentchain.io) aims to provide features like vesting, staking, airdrops, minting NFTs and many more, so talents can grow their community. This has endless possibilities and can change the dynamics of trading skills by profiting whole community holding that currency being traded.
+ [TalentChain](https://www.talentchain.io) offer opportunities to talented individuals interested in self-monetization of their skills around the globe by providing access to personal tokens issued on XRP ledger. These personal tokens will be avialable for trading on [TalentChain DEX](https://www.talentchain.io/dex/TALENT), this enable talents to trade thier time for the servcies / skills they offer in exchange for their own currency (personal token). [TalentChain](https://www.talentchain.io) aims to provide features like vesting, staking, airdrops, minting NFTs and many more, so talents can grow their community. This has endless possibilities and can change the dynamics of trading skills by profiting whole community holding that currency being traded.
 
 <br/>
 
