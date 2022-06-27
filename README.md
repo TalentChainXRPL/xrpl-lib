@@ -56,12 +56,12 @@ Get all balances of a specific XRP Ledger account.
 *REST*
 
 ```
-GET /balances
+GET /balance
 ```
 
 <!-- MULTICODE_BLOCK_END -->
 
-This method requires the following query parameters:
+This method requires the following <b>query</b> parameters:
 
 | Field     | Value  | Description |
 |-----------|--------|-------------|
@@ -80,7 +80,7 @@ Each balance object has the following fields:
 |------------------------------|--------|-------------|
 | `currency` | String | Currency code that can either be a 3 alphabets long ISO standard currency code or a 16 digit long hexadecimal currency code. |
 | `value` | String | Amount of currency that the user holds. |
-| `issuer` | String | Address of the account that owns that currency, not applicable to XRP (<i>native token of XRP ledger</i>) |
+| `issuer` | String | Address of the account that owns that currency, not applicable to XRP (<i>native asset of XRP ledger</i>) |
 
 ### Account Balances for specific currency
 
@@ -91,17 +91,18 @@ Get balance of a specific XRP Ledger account for a specific currency.
 *REST*
 
 ```
-GET /currency-balance
+GET /balance/currency
 ```
 
 <!-- MULTICODE_BLOCK_END -->
 
-This method requires the following query parameters:
+This method requires the following <b>query</b> parameters:
 
 | Field     | Value  | Description |
 |-----------|--------|-------------|
 | `address` | String | XRP Ledger address to query. |
-| `currency` | String | Currency code |
+| `currency` | String | Currency code, can either be <i>ISO-4217</i> standard three alphanumeric or 16 digits hexadecimal string. |
+| `issuer` | String | Currency issuer address, a valid xrpl account address starting with a lower case "r".|
 
 #### Response Format
 A successful response uses the HTTP code **200 OK** and has a JSON body with an array of objects containing currency, value and if currency is not XRP then an issuer fields.
