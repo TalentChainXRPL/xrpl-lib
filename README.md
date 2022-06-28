@@ -132,7 +132,7 @@ Get orders of a specific account, that have not already been filled in the order
 *REST*
 
 ```
-GET /orders
+GET /order
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -175,7 +175,7 @@ Get orders for a specific currency in the order book, of a particular address.
 *REST*
 
 ```
-GET /currency-orders
+GET /order/currency
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -220,7 +220,7 @@ Get orders for a specific currency pair in the order book, of a particular addre
 *REST*
 
 ```
-GET /currency-pair-orders
+GET /order/currency-pair
 ```
 
 <!-- MULTICODE_BLOCK_END -->
@@ -230,8 +230,8 @@ This method requires the following Query parameters:
 | Field    | Value  | Description |
 |----------|--------|-------------|
 | `address` | String | XRP Ledger address to query. |
-| `base` | String | Issuer address followed by + and Currency code for the base currency, e.g; <i>rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq<b>+</b>EUR</i>. |
-| `counter` | String | Issuer address followed by + and Currency code for the counter currency, e.g; <i>rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67<b>+</b>XAU</i>. |
+| `base` | String | Issuer address followed by + and Currency code for the base currency, e.g; <i>rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq<b>+</b>EUR</i> or <i>xrp</i> for XRP. |
+| `counter` | String | Issuer address followed by + and Currency code for the counter currency, e.g; <i>rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67<b>+</b>XAU</i> or <i>xrp</i> for XRP. |
 
 The API returns open orders for all currencies that have been placed the by the specified address.
 

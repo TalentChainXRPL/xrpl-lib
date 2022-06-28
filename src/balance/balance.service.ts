@@ -30,8 +30,8 @@ export class BalanceService {
         balances.push(response[0]);
       } else {
         response.forEach((balance) => {
-          if (balance?.currency === currency) {
-            balances.push(balance);
+          if (balance?.currency === currency && balance?.issuer === issuer) {
+            return { balance: balance };
           }
         });
       }
