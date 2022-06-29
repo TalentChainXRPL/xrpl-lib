@@ -1,8 +1,12 @@
-import { Controller, Get, Req } from '@nestjs/common';
-import { Request } from 'express';
+import { Controller, Get, Query, UsePipes } from '@nestjs/common';
+import { JoiValidationPipe } from 'src/pipe/validation.pipe';
+import { balanceSchema } from 'src/schema/balance.schema';
+import { currencyOrderSchema } from 'src/schema/currency-orders.schema';
+import { currencyPairOrderSchema } from 'src/schema/currency-pair-order.schema';
+import { Balance } from 'src/type/balance.type';
+import { CurrencyOrder } from 'src/type/currency-order.type';
+import { CurrencyPairOrder } from 'src/type/currency-pair-order.type';
 
-import { validateBalanceQuery } from 'src/validators/balance.validator';
-import { validateCurrencyOrdersQuery } from 'src/validators/currency-orders.validator';
 import { OrderService } from './order.service';
 
 @Controller('order')
@@ -10,49 +14,28 @@ export class OrderController {
   constructor(private readonly orderService: OrderService) {}
 
   @Get()
-  async getOrders(@Req() req: Request) {
-    if (validateBalanceQuery(req.query?.address.toString() || '')) {
-      return this.orderService.getAllOrders(req.query.address.toString());
-    } else {
-      throw new Error('Query param "address" is required');
-    }
+  @UsePipes(new JoiValidationPipe(balanceSchema))
+  async getOrders(@Query() query: Balance) {
+    return this.orderService.getAllOrders(query.address);
   }
 
   @Get('currency')
-  async getCurrencyOrders(@Req() req: Request) {
-    if (
-      validateCurrencyOrdersQuery(
-        req.query?.address.toString() || '',
-        req.query?.currency.toString() || '',
-        req.query?.issuer.toString() || '',
-      )
-    ) {
-      return this.orderService.getCurrencyOrders(
-        req.query.address.toString(),
-        req.query.currency.toString(),
-        req.query?.issuer?.toString(),
-      );
-    } else {
-      throw new Error('Missing query params');
-    }
+  @UsePipes(new JoiValidationPipe(currencyOrderSchema))
+  async getCurrencyOrders(@Query() query: CurrencyOrder) {
+    return this.orderService.getCurrencyOrders(
+      query.address,
+      query.currency,
+      query.issuer,
+    );
   }
 
   @Get('currency-pair')
-  async getCurrencyPairOrders(@Req() req: Request) {
-    if (
-      validateCurrencyOrdersQuery(
-        req.query?.address.toString() || '',
-        req.query?.base.toString() || '',
-        req.query?.counter.toString() || '',
-      )
-    ) {
-      return this.orderService.getCurrencyPairOrders(
-        req.query.address.toString(),
-        req.query.base.toString(),
-        req.query?.counter?.toString(),
-      );
-    } else {
-      throw new Error('Missing query params');
-    }
+  @UsePipes(new JoiValidationPipe(currencyPairOrderSchema))
+  async getCurrencyPairOrders(@Query() query: CurrencyPairOrder) {
+    return this.orderService.getCurrencyPairOrders(
+      query.address,
+      query.base,
+      query.counter,
+    );
   }
 }

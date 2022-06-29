@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, Injectable } from '@nestjs/common';
 import * as xrpl from 'xrpl';
 
 import { XrplService } from 'src/xrpl/xrpl.service';
@@ -21,6 +21,7 @@ export class OrderService {
       return { orders: orders.result.offers };
     } catch (error) {
       console.log(error);
+      throw new HttpException('Server error, please try again.', 500);
     }
   }
 
@@ -55,37 +56,43 @@ export class OrderService {
       return { orders: orders };
     } catch (error) {
       console.log(error);
+      throw new HttpException('Server error, please try again.', 500);
     }
   }
 
   async getCurrencyPairOrders(address: string, base: string, counter: string) {
+    if (base === counter) {
+      throw new HttpException('Base and Counter cannot be same', 400);
+    }
+
+    let isCounterXrp = false;
+    let isBaseXrp = false;
+    let baseCurrency = '';
+    let baseIssuer = '';
+    let counterCurrency = '';
+    let counterIssuer = '';
+
+    if (base.toLowerCase() === 'xrp') {
+      isBaseXrp = true;
+    } else {
+      const baseInfo = base.split('+');
+      baseIssuer = baseInfo[0];
+      baseCurrency = baseInfo[1];
+    }
+
+    if (counter.toLowerCase() === 'xrp') {
+      isCounterXrp = true;
+    } else {
+      const counterInfo = counter.split('+');
+      counterIssuer = counterInfo[0];
+      counterCurrency = counterInfo[1];
+    }
+
+    if (isBaseXrp && isCounterXrp) {
+      throw new HttpException('Invalid currencies!', 400);
+    }
+
     try {
-      if (base === counter) {
-        throw new Error('Base and Counter cannot be same');
-      }
-      let isCounterXrp = false;
-      let isBaseXrp = false;
-      let baseCurrency = '';
-      let baseIssuer = '';
-      let counterCurrency = '';
-      let counterIssuer = '';
-
-      if (base.toLowerCase() === 'xrp') {
-        isBaseXrp = true;
-      } else {
-        const baseInfo = base.split('+');
-        baseIssuer = baseInfo[0];
-        baseCurrency = baseInfo[1];
-      }
-
-      if (counter.toLowerCase() === 'xrp') {
-        isCounterXrp = true;
-      } else {
-        const counterInfo = counter.split('+');
-        counterIssuer = counterInfo[0];
-        counterCurrency = counterInfo[1];
-      }
-
       const sdk = await this.xrplService.getSDK();
 
       const tx = {
@@ -146,11 +153,12 @@ export class OrderService {
           });
           return { orders: orders };
         } else {
-          throw new Error('Invalid currencies!');
+          return { orders: [] };
         }
       }
     } catch (error) {
       console.log(error);
+      throw new HttpException('Server error, please try again.', 500);
     }
   }
 }

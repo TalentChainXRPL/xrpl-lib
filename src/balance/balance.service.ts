@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, Injectable } from '@nestjs/common';
 import { XrplService } from 'src/xrpl/xrpl.service';
 
 @Injectable()
@@ -10,23 +10,26 @@ export class BalanceService {
       const sdk = await this.xrplService.getSDK();
       return await sdk.getBalances(address);
     } catch (err) {
-      throw new Error(err);
+      console.log(err);
+      throw new HttpException('Server error, please try again.', 500);
     }
   }
 
   async getCurrencyBalances(address: string, currency: string, issuer: string) {
+    const balances = [];
+
+    if (!issuer) {
+      if (currency.toLowerCase() !== 'xrp') {
+        throw new HttpException(
+          "If you're trying to get balance for a currency other than XRP, you must specify the issuer address otherwise specify xrp as currency",
+          400,
+        );
+      }
+    }
     try {
       const sdk = await this.xrplService.getSDK();
-      const balances = [];
       const response = await sdk.getBalances(address);
-
       if (!issuer) {
-        if (currency.toLowerCase() !== 'xrp') {
-          throw new Error(
-            "If you're trying to get balance for a currency other than XRPL, you must specify the issuer address otherwise specify xrp as currency",
-          );
-        }
-
         balances.push(response[0]);
       } else {
         response.forEach((balance) => {
@@ -35,10 +38,10 @@ export class BalanceService {
           }
         });
       }
-
       return { balance: balances[0] };
     } catch (err) {
-      throw new Error(err);
+      console.log(err);
+      throw new HttpException('Server error, please try again.', 500);
     }
   }
 }

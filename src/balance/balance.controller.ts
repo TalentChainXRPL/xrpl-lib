@@ -1,38 +1,29 @@
-import { Controller, Get, Req } from '@nestjs/common';
-import { Request } from 'express';
+import { Controller, Get, Query, UsePipes } from '@nestjs/common';
 
 import { BalanceService } from './balance.service';
-import { validateBalanceQuery } from 'src/validators/balance.validator';
-import { validateCurrencyBalanceQuery } from 'src/validators/currency-balance.validator';
+import { JoiValidationPipe } from 'src/pipe/validation.pipe';
+import { Balance } from 'src/type/balance.type';
+import { balanceSchema } from 'src/schema/balance.schema';
+import { currencyBalanceSchema } from 'src/schema/currency-balance.schema';
+import { CurrencyBalance } from 'src/type/currency-balance.type';
 
 @Controller('balance')
 export class BalanceController {
   constructor(private readonly balanceService: BalanceService) {}
 
   @Get()
-  async getBalances(@Req() req: Request) {
-    if (validateBalanceQuery(req.query?.address.toString() || '')) {
-      return this.balanceService.getBalances(req.query.address.toString());
-    } else {
-      throw new Error('Query param "address" is required');
-    }
+  @UsePipes(new JoiValidationPipe(balanceSchema))
+  async getBalances(@Query() query: Balance) {
+    return this.balanceService.getBalances(query.address);
   }
 
   @Get('currency')
-  async getBalance(@Req() req: Request) {
-    if (
-      validateCurrencyBalanceQuery(
-        req.query?.address.toString() || '',
-        req.query?.currency.toString() || '',
-      )
-    ) {
-      return this.balanceService.getCurrencyBalances(
-        req.query.address.toString(),
-        req.query.currency.toString(),
-        req.query?.issuer?.toString() || undefined,
-      );
-    } else {
-      throw new Error('Missing query params');
-    }
+  @UsePipes(new JoiValidationPipe(currencyBalanceSchema))
+  async getBalance(@Query() query: CurrencyBalance) {
+    return this.balanceService.getCurrencyBalances(
+      query.address,
+      query.currency,
+      query?.issuer || undefined,
+    );
   }
 }
