@@ -1,38 +1,38 @@
 # A TypeScript Library for XRPL By TalentChain
 
-<h3> <b>TalentChain</b> aims to provide an <i>open source</i> Restful API, to make it easier to access information and interact with <b><i>XRP ledger</i></b>. </h3>
+<h3> <b>TalentChain</b> aims to provide an <i>open source</i> Restful API, to make it easier to access information and interact with the <b><i>XRP ledger</i></b>. </h3>
 
 <br/><br/>
 
 ## About TalentChain
-### [TalentChain](https://www.talentchain.io) is providing a decentralized exchange that allow users to trade on XRP ledger.
+### [TalentChain](https://www.talentchain.io) is providing a decentralized exchange that allow users to trade Personal Tokens on XRP ledger.
 
 `Decentralized Exchange` – Access [TalentChain DEX](https://www.talentchain.io/dex/TALENT).
 
 <br/>
 
- [TalentChain](https://www.talentchain.io) offer opportunities to talented individuals interested in self-monetization of their skills around the globe by providing access to personal tokens issued on XRP ledger. These personal tokens will be avialable for trading on [TalentChain DEX](https://www.talentchain.io/dex/TALENT), this enable talents to trade thier time for the servcies / skills they offer in exchange for their own currency (personal token). [TalentChain](https://www.talentchain.io) aims to provide features like vesting, staking, airdrops, minting NFTs and many more, so talents can grow their community. This has endless possibilities and can change the dynamics of trading skills by profiting whole community holding that currency being traded.
+ [TalentChain](https://www.talentchain.io) offer opportunities to talented individuals interested in self-monetization by providing access to personal tokens issued on XRP ledger. These personal tokens are available for trading on [TalentChain DEX](https://www.talentchain.io/dex/TALENT), this enable talents to trade services or goods they offer in exchange for their own currency (personal token). [TalentChain](https://www.talentchain.io) aims to provide features like vesting, staking, airdrops, minting NFTs and many more, so talents can grow their community.
 
 <br/>
 
-### How [TalentChain](https://www.talentchain.io) benefits XRPL community.
+### How [TalentChain](https://www.talentchain.io) benefits the XRPL Community:
 
 <br/>
 
 <ul>
-  <li>Issuing new tokens on XRP ledger.</li>
-  <li>Attracting new users to hold tokens issued on XRP ledger.</li>
+  <li>Issuing new tokens on the XRP ledger.</li>
+  <li>Attracting new users to hold personal tokens issued on the XRP ledger.</li>
   <li>Creating more opportunities for trades on XRP ledger.</li>
-  <li>Contributing to XRP ledger by open sourcing TS code and documentation for xrpl.</li>
-  <li>A platform that allows users to trade on XRP ledger</li>
-  <li>TalentChain aims to launch a live instance of the open source xrpl based library which makes it easier for users to interact with the ledger and grow xrpl information endpoints for public.</li>
+  <li>Contributing to the XRP ledger by open sourcing TalentChain code and documentation for XRPL.</li>
+  <li>Allowing users to trade on the XRP ledger</li>
+  <li>TalentChain aims to launch a live instance of the open source xrpl based library which makes it easier for users to interact with the ledger and grow XRPL information endpoints for public.</li>
 </ul>
 
 <br/><br/>
 
 ## About TalentChain API
 
- Under the hood, TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) and connects to XRP ledger through websockets using [mainnet](wss://xrplcluster.com) for interacting with the ledger.
+ Under the hood, TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) and connects to the XRP ledger through websockets using [mainnet](wss://xrplcluster.com) for interacting with the ledger.
 
  For receiving some information from ledger, the API also utilizes [Ripple Data API v2](https://data.ripple.com/v2/).
 
