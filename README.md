@@ -67,6 +67,8 @@ This method requires the following <b>query</b> parameters:
 |-----------|--------|-------------|
 | `address` | String | XRP Ledger address to query. |
 
+<br/>
+
 #### Response Format
 A successful response uses the HTTP code **200 OK** and has a JSON body with an array of objects containing currency, value and if currency is not XRP then an issuer fields.
 
@@ -81,6 +83,10 @@ Each balance object has the following fields:
 | `currency` | String | Currency code that can either be a 3 alphabets long ISO standard currency code or a 16 digit long hexadecimal currency code. |
 | `value` | String | Amount of currency that the user holds. |
 | `issuer` | String | Address of the account that owns that currency, not applicable to XRP (<i>native asset of XRP ledger</i>) |
+
+
+<br/><br/>
+
 
 ### Account Balances for specific currency
 
@@ -104,6 +110,8 @@ This method requires the following <b>query</b> parameters:
 | `currency` | String | Currency code, can either be <i>ISO-4217</i> standard three alphanumeric or 16 digits hexadecimal string. |
 | `issuer` | String | Currency issuer address, a valid xrpl account address starting with a lower case "r".|
 
+<br/>
+
 #### Response Format
 A successful response uses the HTTP code **200 OK** and has a JSON body with an array of objects containing currency, value and if currency is not XRP then an issuer fields.
 
@@ -120,6 +128,7 @@ Each balance object has the following fields:
 | `issuer` | String | Address of the account that owns that currency, not applicable to XRP (<i>native token of XRP ledger</i>) |
 
 
+<br/><br/>
 
 ### Account Orders
 
@@ -143,7 +152,11 @@ This method requires the following Query parameters:
 |----------|--------|-------------|
 | `address` | String | XRP Ledger address to query. |
 
+<br/>
+
 The API returns open orders for all currencies that have been placed the by the specified address.
+
+<br/>
 
 #### Response Format
 A successful response uses the HTTP code **200 OK** and has a JSON body with the following:
@@ -163,6 +176,8 @@ Each offer object has the following fields:
 | `quality` | String | The exchange rate of the offer, as the ratio of the original taker_pays divided by the original taker_gets. |
 | `expiration` | Unsigned integer | (May be omitted) A time after which this offer is considered unfunded. |
 
+
+<br/><br/>
 
 ### Account Orders for specific currency
 
@@ -188,7 +203,11 @@ This method requires the following Query parameters:
 | `currency` | String | Currency code. |
 | `issuer` | String | Issuer address. |
 
+<br/>
+
 The API returns open orders for all currencies that have been placed the by the specified address.
+
+<br/>
 
 #### Response Format
 A successful response uses the HTTP code **200 OK** and has a JSON body with the following:
@@ -208,6 +227,8 @@ Each offer object has the following fields:
 | `quality` | String | The exchange rate of the offer, as the ratio of the original taker_pays divided by the original taker_gets. |
 | `expiration` | Unsigned integer | (May be omitted) A time after which this offer is considered unfunded. |
 
+
+<br/><br/>
 
 ### Account Orders for specific currency pair
 
@@ -233,7 +254,11 @@ This method requires the following Query parameters:
 | `base` | String | Issuer address followed by + and Currency code for the base currency, e.g; <i>rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq<b>+</b>EUR</i> or <i>xrp</i> for XRP. |
 | `counter` | String | Issuer address followed by + and Currency code for the counter currency, e.g; <i>rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67<b>+</b>XAU</i> or <i>xrp</i> for XRP. |
 
+<br/>
+
 The API returns open orders for all currencies that have been placed the by the specified address.
+
+<br/>
 
 #### Response Format
 A successful response uses the HTTP code **200 OK** and has a JSON body with the following:
@@ -254,10 +279,11 @@ Each offer object has the following fields:
 | `expiration` | Unsigned integer | (May be omitted) A time after which this offer is considered unfunded. |
 
 
+<br/><br/>
 
 ### Market Statistics
 
-Market trade statistics of specified currency pairs for last 24 hours from xrp ledger.
+Market trade statistics of specified currency pairs for last 24 hours from xrp ledger along with some additional information that isn't offered by other public data endpoints or even the xrpl sdk.
 
 #### Request Format
 
@@ -278,7 +304,11 @@ This method requires the following Query parameters:
 | `base` | String | Issuer address followed by + and Currency code for the base currency, e.g; <i>rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq<b>+</b>EUR</i> or <i>xrp</i> for XRP. |
 | `counter` | String | Issuer address followed by + and Currency code for the counter currency, e.g; <i>rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67<b>+</b>XAU</i> or <i>xrp</i> for XRP. |
 
+<br/>
+
 The API returns last 24 hour statistics of specified currency pair from xrp ledger.
+
+<br/>
 
 #### Response Format
 A successful response uses the HTTP code **200 OK** and has a JSON body with the following:
@@ -299,5 +329,71 @@ Market stats object has the following fields:
 | `first` | Unsigned integer | Price of base currency in the first trade that happened during the last 24 hours. |
 | `change` | Signed integer | Numeric signed value for 24 hours change as percentage of base currency. |
 
+
+<br/><br/>
+
+### Chart Data for trades on XRP ledger.
+
+This API returns tarding data of any currency pair on the XRP ledger for charts along with some additional information that isn't offered by other public data endpoints or even the xrpl sdk.
+
+#### Request Format
+
+<!-- MULTICODE_BLOCK_START -->
+
+*REST*
+
+```
+GET /chart
+```
+
+<!-- MULTICODE_BLOCK_END -->
+
+This method requires the following Query parameters:
+
+| Field    | Value  | Description |
+|----------|--------|-------------|
+| `period` | String | Valid period value |
+| `from` | String | Valid date (string / milliseconds) from which to start the chart data till current time. |
+| `base` | String | Issuer address followed by + and Currency code for the base currency, e.g; <i>rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq<b>+</b>EUR</i> or <i>xrp</i> for XRP. |
+| `counter` | String | Issuer address followed by + and Currency code for the counter currency, e.g; <i>rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67<b>+</b>XAU</i> or <i>xrp</i> for XRP. |
+
+#### Period options
+
+| Field  | Value | Description |
+|--------|-------|-------------|
+| `1h` | string | For getting chart data chunks base on an interval of 1 hour. |
+| `3h` | string | For getting chart data chunks base on an interval of 3 hours. |
+| `6h` | string | For getting chart data chunks base on an interval of 6 hours. |
+| `12h` | string | For getting chart data chunks base on an interval of 12 hours. |
+| `1d` | string | For getting chart data chunks base on an interval of 1 dya. |
+| `3d` | string | For getting chart data chunks base on an interval of 3 days. |
+| `1w` | string | For getting chart data chunks base on an interval of 1 week. |
+
+<br/>
+
+The API returns last 24 hour statistics of specified currency pair from xrp ledger.
+
+<br/>
+
+#### Response Format
+A successful response uses the HTTP code **200 OK** and has a JSON body with the following:
+
+| Field  | Value | Description |
+|--------|-------|-------------|
+| `chartData` | Array of chart data objects | Object containing chart data fields to be used in the chart. |
+| `totalVolume` | number | Total volume of the whole chart data. |
+
+<h4>Chart data object has the following fields:</h4>
+
+| Field                        | Value  | Description |
+|------------------------------|--------|-------------|
+| `date` | ISO Date time string | Date time for the data. |
+| `open` | Unsigned integer | Open price in the specific interval based chunk of trading data. |
+| `volume` | Unsigned integer | Total volume of trades that happened during the interval. |
+| `high` | String or Object | Highest price of base currency in all trades that happened during the interval. |
+| `low` | String or Object | Lowest price of base currency in all trades that happened during the interval. |
+| `close` | String | Price of base currency in the last trade that happened during the interval. |
+
+<br/><br/>
 
 ### Work in progress...
