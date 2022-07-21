@@ -252,3 +252,52 @@ Each offer object has the following fields:
 | `taker_pays` | String or Object | The amount the account accepting the offer provides, as a String representing an amount in XRP, or a currency object. |
 | `quality` | String | The exchange rate of the offer, as the ratio of the original taker_pays divided by the original taker_gets. |
 | `expiration` | Unsigned integer | (May be omitted) A time after which this offer is considered unfunded. |
+
+
+
+### Market Statistics
+
+Market trade statistics of specified currency pairs for last 24 hours from xrp ledger.
+
+#### Request Format
+
+<!-- MULTICODE_BLOCK_START -->
+
+*REST*
+
+```
+GET /market
+```
+
+<!-- MULTICODE_BLOCK_END -->
+
+This method requires the following Query parameters:
+
+| Field    | Value  | Description |
+|----------|--------|-------------|
+| `base` | String | Issuer address followed by + and Currency code for the base currency, e.g; <i>rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq<b>+</b>EUR</i> or <i>xrp</i> for XRP. |
+| `counter` | String | Issuer address followed by + and Currency code for the counter currency, e.g; <i>rrh7rf1gV2pXAoqA8oYbpHd8TKv5ZQeo67<b>+</b>XAU</i> or <i>xrp</i> for XRP. |
+
+The API returns last 24 hour statistics of specified currency pair from xrp ledger.
+
+#### Response Format
+A successful response uses the HTTP code **200 OK** and has a JSON body with the following:
+
+| Field  | Value | Description |
+|--------|-------|-------------|
+| `market` | Market statistics object | Object containing last 24 hour's market statistics. |
+
+Market stats object has the following fields:
+
+| Field                        | Value  | Description |
+|------------------------------|--------|-------------|
+| `open` | Unsigned integer | Open price. |
+| `volume` | Unsigned integer | Total volume of trades that happened during the last 24 hours. |
+| `high` | String or Object | Highest price of base currency in all trades that happened during the last 24 hours. |
+| `low` | String or Object | Lowest price of base currency in all trades that happened during the last 24 hours. |
+| `close` | String | Price of base currency in the last trade that happened during the last 24 hours. |
+| `first` | Unsigned integer | Price of base currency in the first trade that happened during the last 24 hours. |
+| `change` | Signed integer | Numeric signed value for 24 hours change as percentage of base currency. |
+
+
+### Work in progress...

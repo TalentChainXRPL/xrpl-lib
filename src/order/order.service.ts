@@ -157,7 +157,6 @@ export class OrderService {
         }
       }
     } catch (error) {
-      console.log(error);
       throw new HttpException('Server error, please try again.', 500);
     }
   }

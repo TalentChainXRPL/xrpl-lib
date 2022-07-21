@@ -1,7 +1,6 @@
 import * as Joi from 'joi';
 
-export const currencyPairOrderSchema = Joi.object({
-  address: Joi.string().alphanum().min(25).max(35).required(),
+export const marketStatSchema = Joi.object({
   base: Joi.string().min(3).required(),
   counter: Joi.string().min(3).required(),
 });
