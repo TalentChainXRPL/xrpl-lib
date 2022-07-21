@@ -35,9 +35,19 @@ export class MarketService {
       throw new HttpException('Invalid currencies!', 400);
     }
 
-    try {
-      const pair = `${baseCurrency}+${baseIssuer}/${counterCurrency}+${counterIssuer}`;
+    let pair = '';
 
+    if (isBaseXrp && !isCounterXrp) {
+      pair = `XRP/${counterCurrency}+${counterIssuer}`;
+    } else if (!isBaseXrp && isCounterXrp) {
+      pair = `${baseCurrency}+${baseIssuer}/XRP`;
+    } else if (!isBaseXrp && !isCounterXrp) {
+      pair = `${baseCurrency}+${baseIssuer}/${counterCurrency}+${counterIssuer}`;
+    } else {
+      throw new HttpException('Invalid currencies!', 400);
+    }
+
+    try {
       const payload = {
         symbols: [pair],
       };
