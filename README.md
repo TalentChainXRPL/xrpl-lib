@@ -324,7 +324,7 @@ Market stats object has the following fields:
 | `open` | Unsigned number | Open price. |
 | `volume` | Unsigned number | Total volume of trades that happened during the last 24 hours. |
 | `high` | Unsigned number | Highest price of base currency in all trades that happened during the last 24 hours. |
-| `low` | Unsigned numbert | Lowest price of base currency in all trades that happened during the last 24 hours. |
+| `low` | Unsigned number | Lowest price of base currency in all trades that happened during the last 24 hours. |
 | `close` | Unsigned number | Price of base currency in the last trade that happened during the last 24 hours. |
 | `first` | Unsigned number | Price of base currency in the first trade that happened during the last 24 hours. |
 | `change` | Signed number | Numeric signed value for 24 hours change as percentage of base currency. |
