@@ -319,8 +319,8 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 
 Market stats object has the following fields:
 
-| Field                        | Value  | Description |
-|------------------------------|--------|-------------|
+| Field                        | Value                | Description |
+|------------------------------|----------------------|-------------|
 | `open` | Unsigned number | Open price. |
 | `volume` | Unsigned number | Total volume of trades that happened during the last 24 hours. |
 | `high` | Unsigned number | Highest price of base currency in all trades that happened during the last 24 hours. |
@@ -350,8 +350,8 @@ GET /chart
 
 This method requires the following Query parameters:
 
-| Field    | Value  | Description |
-|----------|--------|-------------|
+| Field    | Value        | Description |
+|----------|--------------|-------------|
 | `period` | String | Valid period value |
 | `from` | String | Valid date (string / milliseconds) from which to start the chart data till current time. |
 | `base` | String | Issuer address followed by + and Currency code for the base currency, e.g; <i>rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq<b>+</b>EUR</i> or <i>xrp</i> for XRP. |
@@ -385,8 +385,8 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 
 <h4>Chart data object has the following fields:</h4>
 
-| Field                        | Value  | Description |
-|------------------------------|--------|-------------|
+| Field                        | Value                     | Description |
+|------------------------------|---------------------------|-------------|
 | `date` | ISO Date time string | Date time for the data. |
 | `open` | Unsigned number | Open price in the specific interval based chunk of trading data. |
 | `volume` | Unsigned number | Total volume of trades that happened during the interval. |
