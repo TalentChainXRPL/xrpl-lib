@@ -3,16 +3,17 @@
 
 <h3> This is an <i>open source</i> data API for XRPL community, to make it easier to access information and interact with the <b><i>XRP ledger</i></b>, written in TypeScript, offered by <a 
     target="_blank" 
-    href="https://www.talentchain.io/marketplace"
+    href="https://www.talentchain.io"
     rel="noreferrer">TalentChain</a> published with ❤️. </h3>
 
 <br/>
 
 # About TalentChain
-## Talentchain is a platform for self-monetization.
+## 
 
 <p>
-                It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
+                Talentchain is a platform for self-monetization.
+It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
                 token in order for them to build their own digital economy.
               </p>
               <p >
