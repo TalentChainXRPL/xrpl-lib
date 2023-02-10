@@ -11,7 +11,8 @@
 # About TalentChain
 
 <p>
-              <b>  Talentchain is a platform for self-monetization.</b> 
+              <b>  Talentchain is a platform for self-monetization.</b>  </p>
+              <p >
 It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
                 token in order for them to build their own digital economy.
               </p>
