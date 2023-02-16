@@ -1,5 +1,5 @@
 {
-  "name": "xrpl-lib",
+  "name": "talentchain-xrpl-lib",
   "version": "0.0.1",
   "description": "A typescript open source library for XRP ledger by TalentChain.",
   "author": "TalentChainXRPL",

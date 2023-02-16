@@ -9,5 +9,6 @@ import { ChartModule } from './chart/chart.module';
   imports: [BalanceModule, OrderModule, MarketModule, ChartModule],
   controllers: [],
   providers: [XrplService],
+  exports: [],
 })
 export class AppModule {}
