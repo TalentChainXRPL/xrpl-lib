@@ -53,7 +53,7 @@ It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
 
 <br/><br/>
 
-## About TalentChain API
+## TalentChain XRPL API
 
  TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) to connect to the XRP ledger via websockets using [mainnet](wss://xrplcluster.com) for interacting with the ledger.
 
@@ -64,6 +64,31 @@ It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
 `TalentChain API` – TalentChain aims to launch a live instance of this XRPL TS library at this [link](https://api.talentchain.io) public URL in Q3, 2023. More information about rate limiting, etc will be added below this section. 
 
 <br/><br/>
+
+## Quickstart
+Setting up this project on local development machine
+### Prerequisites
+
++ **[Node.js v14](https://nodejs.org/)** is recommended. We also support v16 and v18. Other versions may work but are not frequently tested.
+
+### Installation
+
+In the root directory of this project where <i>package.json</i> file exists, execute the following command:
+
+```
+$ npm install --save
+```
+
+Once the above command is completed, run the following command:
+
+
+```
+$ npm run start
+```
+
+This will start the server on local port <i>3003</i>.
+
+<br/>
 
 ## ➡️ API Reference
 
