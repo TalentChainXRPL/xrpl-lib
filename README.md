@@ -65,7 +65,7 @@ It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
 
 <br/><br/>
 
-## ➡️ API reference
+## ➡️ API Reference
 
 <br/>
 
