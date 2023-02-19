@@ -57,7 +57,7 @@ It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
 
  TalentChain API uses [xrpl JS/TS npm package](https://www.npmjs.com/package/xrpl) to connect to the XRP ledger via websockets using [mainnet](wss://xrplcluster.com) for interacting with the ledger.
 
- For receiving some information from ledger, the we also utilize [Ripple Data API v2](https://data.ripple.com/v2/).
+ For receiving information from ledger we utilize [Ripple Data API v2](https://data.ripple.com/v2/).
 
 <br/>
 
@@ -65,7 +65,7 @@ It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
 
 <br/><br/>
 
-## API reference
+## ➡️ API reference
 
 <br/>
 
