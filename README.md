@@ -69,7 +69,7 @@ It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
 Setting up this project on local development machine
 ### Prerequisites
 
-+ **[Node.js v14](https://nodejs.org/)** is recommended. We also support v16 and v18. Other versions may work but are not frequently tested.
++ Only **[Node.js](https://nodejs.org/)** is required to run this project. 
 
 ### Installation
 
