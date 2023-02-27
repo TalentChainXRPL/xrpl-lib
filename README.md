@@ -1,6 +1,9 @@
 <h1 align="center">Welcome to TalentChain's Open Source API 👋</h1>
 <br/><br/>
 
+![TalentChain](./images/talent-logo.jpg?raw=true "TalentChain")
+
+
 <h3> This is an <i>open source</i> data API for XRPL community, to make it easier to access information and interact with the <b><i>XRP ledger</i></b>, written in TypeScript, offered by <a 
     target="_blank" 
     href="https://www.talentchain.io/"
@@ -8,7 +11,7 @@
 
 <br/>
 
-![TalentChain](./images/talent-logo.jpg?raw=true "TalentChain") <span style="margin-top:-10rem; font-size:250%"> TalentChain </span> 
+# About TalentChain 
 
 <p>
               <b>  Talentchain is a platform for self-monetization.</b>  </p>
