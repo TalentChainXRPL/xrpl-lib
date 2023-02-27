@@ -8,7 +8,7 @@
 
 <br/>
 
-# About TalentChain
+![TalentChain](./images/talent-logo.jpg?raw=true "TalentChain") <span style="margin-top:-10rem; font-size:250%"> TalentChain </span> 
 
 <p>
               <b>  Talentchain is a platform for self-monetization.</b>  </p>
@@ -51,7 +51,23 @@ It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
   <li>Contributing to the XRP ledger by open sourcing data APIs and documentation for XRP ledger.</li>
 </ul>
 
-<br/><br/>
+<br/>
+
+### TalentChain as FIAT to Crypto Bridge on XRPL
+
+TalentChain is enabling centralized users to be able to trade on XRPL (decentralized space) by acting as a bridge.
+
+Following is a simple diagram explaining how TalentChain bridges FIAT payments to cryptocurrency
+
+![TalentChain bridging fiat to cryptocurrencies on XRPL](./images/talentchain-as-a-bridge.png?raw=true "TalentChain bridging fiat to cryptocurrencies on XRPL")
+
+<p>
+  In this diagram, the centralized fiat currency exchange and the decentralized cryptocurrency network are connected through a fiat currency bridge and a cryptocurrency bridge. The conversion rates between the two currencies are determined by the respective bridges.
+
+A user can exchange their fiat currency on the centralized exchange for the corresponding cryptocurrency, and the converted cryptocurrency can be stored in the user's cryptocurrency wallet. The user can then use their cryptocurrency to make a purchase from a merchant who accepts cryptocurrency payments. The merchant can receive the cryptocurrency in their cryptocurrency wallet and exchange it back for fiat currency through the decentralized cryptocurrency network's bridge to make a withdrawal to their bank account.
+</p>
+<br />
+<br />
 
 ## TalentChain XRPL API
 
