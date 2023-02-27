@@ -13,7 +13,7 @@
 <p>
               <b>  Talentchain is a platform for self-monetization.</b>  </p>
               <p >
-It enables <b>“Talents”</b> - <i>creators or makers</i>, to launch their own
+It enables <b>Talents</b> - <i>creators or makers</i>, to launch their own
                 token in order for them to build their own digital economy.
               </p>
               <p >
@@ -464,3 +464,4 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
