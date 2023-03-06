@@ -468,3 +468,20 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 
 Give a ⭐️ if this project helped you!
 
+## FAQ
+
+For any questions, please reach out to our <a 
+    target="_blank" 
+    href="https://contact-137.gitbook.io/talentchain-wiki/"
+    rel="noreferrer">F.A.Q page</a>.
+
+## License
+
+This software is licensed under the MIT license, read more about it <a 
+    target="_blank" 
+    href="https://github.com/TalentChainXRPL/xrpl-lib/blob/main/LICENSE"
+    rel="noreferrer">here</a>.
+
+Copyright (c) 2022 TalentChain
+
+
