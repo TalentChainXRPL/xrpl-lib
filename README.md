@@ -56,7 +56,7 @@ It enables <b>Talents</b> - <i>creators or makers</i>, to launch their own
 
 <br/>
 
-### TalentChain as FIAT to Crypto Bridge on XRPL
+### TalentChain as FIAT to Crypto Bridge for XRPL
 
 TalentChain is enabling centralized users to be able to trade on XRPL (decentralized space) by acting as a bridge.
 
@@ -65,9 +65,9 @@ Following is a simple diagram explaining how TalentChain bridges FIAT payments t
 ![TalentChain bridging fiat to cryptocurrencies on XRPL](./images/talentchain-as-a-bridge.png?raw=true "TalentChain bridging fiat to cryptocurrencies on XRPL")
 
 <p>
-  In this diagram, the centralized fiat currency exchange and the decentralized cryptocurrency network are connected through a fiat currency bridge and a cryptocurrency bridge. The conversion rates between the two currencies are determined by the respective bridges.
+  In this diagram, user pays TalentChain from their centralized fiat currency exchange to TalentChain's centralized fiat currency exchange (bank account). After receiving the total amount in fiat for the product/service offered by any seller on TalentChain marketplace, TalentChain transfers the converted amount of cryptocurrency to the seller and that's how TalentChain acts as bridge between centralized and decentralized communities.
 
-A user can exchange their fiat currency on the centralized exchange for the corresponding cryptocurrency, and the converted cryptocurrency can be stored in the user's cryptocurrency wallet. The user can then use their cryptocurrency to make a purchase from a merchant who accepts cryptocurrency payments. The merchant can receive the cryptocurrency in their cryptocurrency wallet and exchange it back for fiat currency through the decentralized cryptocurrency network's bridge to make a withdrawal to their bank account.
+TalentChain strives to enable centralized users to interact with the decentralized world seamlessly so that users can exchange their fiat currency for any cryptocurrency on TalentChain, and the converted cryptocurrency will be stored in the user's cryptocurrency wallet operated by TalentChain with user's consent. Users can then use the cryptocurrency to make a purchase from "sellers" on TalentChain marketplace who accept cryptocurrency payments and also invest, trade on TalentChain DEX.
 </p>
 <br />
 <br />
