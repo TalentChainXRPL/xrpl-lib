@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to TalentChain's Open Source API 👋</h1>
+<h1 align="center">👋 Welcome to TalentChain's XRPL API</h1>
 <br/><br/>
 
 ![TalentChain](./images/talent-logo.jpg?raw=true "TalentChain")
