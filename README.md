@@ -1,9 +1,9 @@
 <h1 align="center">👋 Welcome to TalentChain's XRPL API</h1>
-<br/><br/>
 
-![TalentChain](./images/talent-logo.jpg?raw=true "TalentChain")
+<!-- ![TalentChain](./images/talent-logo.jpg?raw=true "TalentChain") -->
 
-
+<img src='./images/talent-logo.jpg?raw=true' width="50%" height="auto" style="display:block;margin:0 auto;" />
+<br />
 <h3> This is an <i>open source</i> data API for XRPL community, to make it easier to access information and interact with the <b><i>XRP ledger</i></b>, written in TypeScript, offered by <a 
     target="_blank" 
     href="https://www.talentchain.io/"
@@ -55,21 +55,6 @@ It enables <b>Talents</b> - <i>creators or makers</i>, to launch their own
 </ul>
 
 <br/>
-
-### TalentChain as FIAT to Crypto Bridge for XRPL
-
-TalentChain is enabling centralized users to be able to trade on XRPL (decentralized space) by acting as a bridge.
-
-Following is a simple diagram explaining how TalentChain bridges FIAT payments to cryptocurrency
-
-![TalentChain bridging fiat to cryptocurrencies on XRPL](./images/talentchain-as-a-bridge.png?raw=true "TalentChain bridging fiat to cryptocurrencies on XRPL")
-
-<p>
-  In this diagram, user pays TalentChain from their centralized fiat currency exchange to TalentChain's centralized fiat currency exchange (bank account). After receiving the total amount in fiat for the product/service offered by any seller on TalentChain marketplace, TalentChain transfers the converted amount of cryptocurrency to the seller and that's how TalentChain acts as bridge between centralized and decentralized communities.
-
-TalentChain strives to enable centralized users to interact with the decentralized world seamlessly so that users can exchange their fiat currency for any cryptocurrency on TalentChain, and the converted cryptocurrency will be stored in the user's cryptocurrency wallet operated by TalentChain with user's consent. Users can then use the cryptocurrency to make a purchase from "sellers" on TalentChain marketplace who accept cryptocurrency payments and also invest, trade on TalentChain DEX.
-</p>
-<br />
 <br />
 
 ## TalentChain XRPL API
@@ -462,6 +447,26 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 | `close` | Unsigned number | Price of base currency in the last trade that happened during the interval. |
 
 <br/><br/>
+
+## Upcoming 
+We strive to help grow XRPL community and have a keen vision to expand overall web3 usage. We aim to build one-tap solutions for centralized users around the globe to be able to make all sorts of transactions on XRP ledger (the ripple blockchain). 
+
+### TalentChain as FIAT to Crypto Bridge for XRPL
+
+TalentChain is enabling centralized users to be able to trade on XRPL (decentralized space) by acting as a bridge.
+
+Following is a simple diagram explaining how TalentChain bridges FIAT payments to cryptocurrency
+
+![TalentChain bridging fiat to cryptocurrencies on XRPL](./images/talentchain-as-a-bridge.png?raw=true "TalentChain bridging fiat to cryptocurrencies on XRPL")
+
+<p>
+  In this diagram, user pays TalentChain from their centralized fiat currency exchange to TalentChain's centralized fiat currency exchange (bank account). After receiving the total amount in fiat for the product/service offered by any seller on TalentChain marketplace, TalentChain transfers the converted amount of cryptocurrency to the seller and that's how TalentChain acts as bridge between centralized and decentralized communities.
+
+TalentChain strives to enable centralized users to interact with the decentralized world seamlessly so that users can exchange their fiat currency for any cryptocurrency on TalentChain, and the converted cryptocurrency will be stored in the user's cryptocurrency wallet operated by TalentChain with user's consent. Users can then use the cryptocurrency to make a purchase from "sellers" on TalentChain marketplace who accept cryptocurrency payments and also invest, trade on TalentChain DEX.
+</p>
+<br />
+<br />
+
 
 
 ## Show your support
