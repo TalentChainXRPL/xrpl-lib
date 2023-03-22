@@ -15,7 +15,7 @@
 
 <p>
             <p>
-  <b>[TalentChain](https://www.talentchain.io) is a platform for "self-monetization" that is built on top of the XRPL. 
+  <b>TalentChain</b>(https://www.talentchain.io) is a platform for "self-monetization" that is built on top of the XRPL. 
 <p >Our platform provides creators with the tools and resources they need to issue and manage their own tokens, engage with their communities, and monetize their skills in new and innovative ways. </p>
 <p >We believe that our platform has the potential to transform the way that creators interact with their audiences, providing them with greater control and autonomy over their work.
 </p>
