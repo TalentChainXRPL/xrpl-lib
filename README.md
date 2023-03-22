@@ -2,7 +2,7 @@
 
 <!-- ![TalentChain](./images/talent-logo.jpg?raw=true "TalentChain") -->
 
-<img src='./images/talent-logo.jpg?raw=true' width="50%" height="auto" style="display:block;margin:0 auto;" />
+<img src='./images/talent-logo.jpg?raw=true' width="100%" height="auto" style="display:block;margin:0 auto;" />
 <br />
 <h3> This is an <i>open source</i> data API for XRPL community, to make it easier to access information and interact with the <b><i>XRP ledger</i></b>, written in TypeScript, offered by <a 
     target="_blank" 
@@ -49,6 +49,21 @@
   </li>
   <li>Contributing to the XRP ledger by open sourcing data APIs and documentation for the XRP ledger.</li>
 </ul>
+
+<br/>
+<br />
+
+## TalentChain Design and Architecture
+
+<img src='./images/TalentChainDesign.png?raw=true' width="100%" height="auto" style="display:block;margin:0 auto;" />
+
+<strong>
+  The above diagram is an overview of current talentchain solution deployed at https://www.talentchain.io/ .
+</strong>
+
+<p>
+  Our database, backend server and web application are all deployed at AWS. There are three categories of users in TalentChain (Standard Users, Talents and Admins). TalentChain empowers masses to not only be able to trade on XRP ledger but also launch their own crypto-currencies on the XRP ledger. TalentChain also enable freelancers to publish their services or products on TalentChain's marketplace. We currently support XUMM wallet for users to sign transactions.
+</p>
 
 <br/>
 <br />
