@@ -15,7 +15,7 @@
 
 <p>
             <p>
-  <b>TalentChain</b>(https://www.talentchain.io) is a platform for "self-monetization" that is built on top of the XRPL. 
+  <b>TalentChain</b> (https://www.talentchain.io) is a platform for "self-monetization" that is built on top of the XRPL. 
 <p >Our platform provides creators with the tools and resources they need to issue and manage their own tokens, engage with their communities, and monetize their skills in new and innovative ways. </p>
 <p >We believe that our platform has the potential to transform the way that creators interact with their audiences, providing them with greater control and autonomy over their work.
 </p>
@@ -23,7 +23,7 @@
 
 <br/>
 
- [TalentChain](https://www.talentchain.io) offer opportunities to talented individuals interested in self-monetization by providing access to personal tokens issued on XRP ledger. These personal tokens are available for trading on [TalentChain DEX](https://www.talentchain.io/dex/TALENT), this enable talents to trade services or products they offer in exchange for their own currency (personal token). [TalentChain](https://www.talentchain.io) aims to provide features like vesting, staking, airdrops, minting NFTs and many more, so talents can grow their community.
+ [TalentChain](https://www.talentchain.io) is a platform that provides talented individuals with opportunities for self-monetization by issuing personal tokens on the XRP ledger. These tokens can be traded on the [TalentChain DEX](https://www.talentchain.io/dex/TALENT), enabling talents to exchange their services or products for their own currency. [TalentChain](https://www.talentchain.io) also offers various features such as vesting, staking, airdrops, and minting NFTs to help talents grow their communities. With TalentChain, talented individuals can now take control of their own financial futures and turn their skills into valuable assets. Visit the TalentChain website to learn more about how you can join this exciting new ecosystem.
 
 <br/>
 
