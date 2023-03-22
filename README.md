@@ -15,8 +15,9 @@
 
 <p>
             <p>
-  <b>TalentChain</b> is a platform for "self-monetization" that is built on top of the XRPL. 
-<p >Our platform provides creators with the tools and resources they need to issue and manage their own tokens, engage with their communities, and monetize their skills in new and innovative ways. We believe that our platform has the potential to transform the way that creators interact with their audiences, providing them with greater control and autonomy over their work.
+  <b>[TalentChain](https://www.talentchain.io) is a platform for "self-monetization" that is built on top of the XRPL. 
+<p >Our platform provides creators with the tools and resources they need to issue and manage their own tokens, engage with their communities, and monetize their skills in new and innovative ways. </p>
+<p >We believe that our platform has the potential to transform the way that creators interact with their audiences, providing them with greater control and autonomy over their work.
 </p>
 
 
@@ -44,9 +45,9 @@
     <a 
     target="_blank" 
     href="https://www.talentchain.io/dex/TALENT"
-    rel="noreferrer">decentralized exchange</a> that allow users to trade Personal Tokens on XRP ledger.
+    rel="noreferrer">decentralized exchange</a> that allow users to trade Personal Tokens on the XRP ledger.
   </li>
-  <li>Contributing to the XRP ledger by open sourcing data APIs and documentation for XRP ledger.</li>
+  <li>Contributing to the XRP ledger by open sourcing data APIs and documentation for the XRP ledger.</li>
 </ul>
 
 <br/>
