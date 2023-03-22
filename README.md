@@ -14,16 +14,11 @@
 # About TalentChain 
 
 <p>
-              <b>  Talentchain is a platform for self-monetization.</b>  </p>
-              <p >
-It enables <b>Talents</b> - <i>creators or makers</i>, to launch their own
-                token in order for them to build their own digital economy.
-              </p>
-              <p >
-                This way, talented individuals can build their communities
-                and interact with them, by allowing members to earn and collect
-                benefits or perks and purchase services or products.
-              </p>
+            <p>
+  <b>TalentChain</b> is a platform for "self-monetization" that is built on top of the XRPL. 
+<p >Our platform provides creators with the tools and resources they need to issue and manage their own tokens, engage with their communities, and monetize their skills in new and innovative ways. We believe that our platform has the potential to transform the way that creators interact with their audiences, providing them with greater control and autonomy over their work.
+</p>
+
 
 <br/>
 
