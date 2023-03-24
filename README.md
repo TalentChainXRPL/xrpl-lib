@@ -28,13 +28,14 @@
 <br/>
 
 ### [TalentChain](https://www.talentchain.io) benefits the XRPL community by:
-
 <br/>
 
 <ul>
-  <li>Issuing new tokens (currencies) on the XRP ledger.</li>
+  <li>Contributing to the XRP ledger by open sourcing data APIs and documentation for the XRP ledger.</li>
+ <li>Issuing new tokens on the XRP ledger.</li>
+ <li>Showcasing the capabilities of the XRPL and its potential for other use cases beyond financial transactions</li>
   <li>Attracting new users to hold personal tokens issued on the XRP ledger.</li>
-  <li>Creating more opportunities for trades on XRP ledger from 
+  <li>Creating more opportunities of collaboration between web3 companies and talented individuals with our 
     <a 
     target="_blank" 
     href="https://www.talentchain.io/marketplace"
@@ -47,7 +48,7 @@
     href="https://www.talentchain.io/dex/TALENT"
     rel="noreferrer">decentralized exchange</a> that allow users to trade Personal Tokens on the XRP ledger.
   </li>
-  <li>Contributing to the XRP ledger by open sourcing data APIs and documentation for the XRP ledger.</li>
+ 
 </ul>
 
 <br/>
