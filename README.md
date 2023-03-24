@@ -460,11 +460,11 @@ A successful response uses the HTTP code **200 OK** and has a JSON body with the
 <br/><br/>
 
 ## Upcoming 
-We strive to help grow XRPL community and have a keen vision to expand overall web3 usage. We aim to build one-tap solutions for centralized users around the globe to be able to make all sorts of transactions on XRP ledger (the ripple blockchain). 
+We strive to help grow XRPL community and have a keen vision to expand overall web3 usage. We aim to build one-tap solutions for centralized users around the globe to be able to make all sorts of transactions on the XRP ledger.
 
 ### TalentChain as FIAT to Crypto Bridge for XRPL
 
-TalentChain is enabling centralized users to be able to trade on XRPL (decentralized space) by acting as a bridge.
+TalentChain is enabling centralized users to be able to trade on the XRPL (decentralized space) by acting as a bridge.
 
 Following is a simple diagram explaining how TalentChain bridges FIAT payments to cryptocurrency
 
